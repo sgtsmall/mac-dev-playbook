@@ -16,6 +16,10 @@ This is a work in progress, and is mostly a means for me to document my current 
   - [MWGriffin/ansible-playbooks](https://github.com/MWGriffin/ansible-playbooks) (the original inspiration for this project)
 
 ## Installation
+## Alex Testing ansible under virtualenv
+ -  [pyenv virtualenv](https://github.com/pyenv/pyenv-virtualenv)
+
+pyenv virtualenv ansible39
 
   1. Ensure Apple's command line tools are installed (`xcode-select --install` to launch the installer).
   2. [Install Ansible](https://docs.ansible.com/ansible/latest/installation_guide/index.html).
@@ -60,25 +64,25 @@ You can override any of the defaults configured in `default.config.yml` by creat
       - cowsay
       - git
       - go
-    
+
     mas_installed_apps:
       - { id: 443987910, name: "1Password" }
       - { id: 498486288, name: "Quick Resizer" }
       - { id: 557168941, name: "Tweetbot" }
       - { id: 497799835, name: "Xcode" }
-    
+
     composer_packages:
       - name: hirak/prestissimo
       - name: drush/drush
         version: '^8.1'
-    
+
     gem_packages:
       - name: bundler
         state: latest
-    
+
     npm_packages:
       - name: webpack
-    
+
     pip_packages:
       - name: mkdocs
 
